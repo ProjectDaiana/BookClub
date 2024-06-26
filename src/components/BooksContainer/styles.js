@@ -4,8 +4,9 @@ export const Container = styled.div`
   background-color: #f5f5f5;
   //background-color: #e6ddde;
   padding: 160px 40px;
-  overflow: scroll;
-
+  overflow: ${({ $isPanelOpen }) => ($isPanelOpen ? "hidden" : "scroll")};
+  position: ${({ $isPanelOpen }) => ($isPanelOpen ? "fixed" : "unset")};
+  top: ${({ $isPanelOpen, $top }) => ($isPanelOpen ? `-${$top}px` : 0)};
   @media (max-width: 800px) {
     padding: 114px 20px;
   }

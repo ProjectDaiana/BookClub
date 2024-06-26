@@ -12,7 +12,8 @@ export const Cover = styled.img`
   border: 2px solid #000;
   object-fit: cover;
   aspect-ratio: 2 / 3;
-  max-width: 180px;
+  width: 100%;
+  max-width: 280px;
   margin-bottom: 16px;
 
   &:hover {
