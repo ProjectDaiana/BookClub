@@ -2,19 +2,23 @@ import styled from "styled-components";
 //background-color: #FFA77A;
 export const Container = styled.div`
   background-color: #f5f5f5;
+  max-width: 100vw;
+  height: 100vh;
   //background-color: #e6ddde;
   padding: 160px 40px;
-  overflow: ${({ $isPanelOpen }) => ($isPanelOpen ? "hidden" : "scroll")};
+  //overflow: ${({ $isPanelOpen }) => ($isPanelOpen ? "hidden" : "unset")};
   position: ${({ $isPanelOpen }) => ($isPanelOpen ? "fixed" : "unset")};
   top: ${({ $isPanelOpen, $top }) => ($isPanelOpen ? `-${$top}px` : 0)};
   @media (max-width: 800px) {
     padding: 114px 20px;
   }
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const H2 = styled.h2`
   font-size: 24px;
-  margin: 0;
+  margin-left: inherit;
 
   @media (max-width: 800px) {
     font-size: 14px;
@@ -27,7 +31,9 @@ export const BookList = styled.div`
   grid-column-gap: 40px;
   grid-row-gap: 120px;
   margin-top: 40px;
-  max-width: 1200px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (max-width: 1200px) {
     grid-template-columns: repeat(3, 1fr);

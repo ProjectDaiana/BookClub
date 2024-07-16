@@ -20,8 +20,8 @@ export const SearchContainer = styled(Pill)`
 `;
 
 export const Input = styled.input`
-  font-family: "loretta-variable", serif;
-  font-weight: 600;
+  font-family: "work-sans", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   flex-grow: 1;
   background: inherit;

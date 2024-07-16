@@ -14,6 +14,7 @@ export const Cover = styled.img`
   aspect-ratio: 2 / 3;
   width: 100%;
   max-width: 280px;
+  min-width: 172px;
   margin-bottom: 16px;
 
   &:hover {

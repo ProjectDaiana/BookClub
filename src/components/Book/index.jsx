@@ -3,7 +3,7 @@ import { Container, Cover, Title, Author } from "./styles";
 
 const Book = ({ book, pickBook, isLarge }) => {
   return (
-    <Container $isLarge={isLarge} onClick={() => pickBook(book)}>
+    <Container onClick={pickBook ? () => pickBook(book) : undefined}>
       <figure>
         <Cover
           alt={`Book cover for ${book.tittle} by ${book.author}`}
